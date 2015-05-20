@@ -26,7 +26,7 @@
         <br>
         <label for="login">
             Your Login:</label>
-        <input type="text" id="login" name="login" size="40" value="e.g. jc123456" onSelect="clearField(this)"/>
+        <input type="text" id="login" name="login" size="40" value="e.g. jc123456" onselect="clearField(this)"/>
         <br>
         <label for="email">Your Email Address:</label>
         <input type="text" name="email" id="email" size="40" style="color:#000000" onFocus="changeStyle('email')"
@@ -103,7 +103,9 @@
         <p>And another one, with a parameter:<br>
             <label for="state">Enter your state code: </label>
             <input type="text" name="state" id="state"><br>
-            <button type="button" onclick="loadState()">Set state</button><br>
+
+            <!-- A click event listener is attached to this button in the JS file  -->
+            <button type="button" id="setStateButton">Set state</button><br>
             Your state is: <strong id="stateOutput"></strong>.
         </p>
     </div>

@@ -195,3 +195,6 @@ function loadState() {
     xhr.open("GET", "states.php?state="+state, true);
     xhr.send();
 }
+
+// Attach event handler to state button
+document.getElementById("setStateButton").addEventListener("click", loadState);
