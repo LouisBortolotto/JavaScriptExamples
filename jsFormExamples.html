@@ -26,6 +26,14 @@
 
         <div class="notebox" id="output">&nbsp;</div>
         <br>
+        <label for="age">Your Age:</label>
+        <input type="text" name="age" id="age"/>
+        <br>
+        <label for="date">Date:</label>
+        <input type="text" name="date" id="date" disabled="disabled"/>
+        <br>
+        <button type="button" onclick="document.getElementById('date').value=new Date().toISOString().slice(0, 10);">click me to display date and time.</button>
+        <p id="demo"></p>
         <label for="login">Your Login:</label>
         <input type="text" id="login" name="login" size="40" placeholder="e.g. jc123456"/>
         <br>
