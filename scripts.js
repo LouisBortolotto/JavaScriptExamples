@@ -191,3 +191,22 @@ function loadState() {
 
 // Attach event handler to state button
 document.getElementById("setStateButton").addEventListener("click", loadState);
+
+function displayAge () {
+    var age = document.mainForm.age.value;
+    var textBox = document.getElementById("minorOrAdult");
+    if(isNaN(age))
+
+    {
+        alert("please enter a valid number");
+    }
+    else if (age >= 18) {
+            textBox.value = "Adult";
+
+    }
+    else {
+        textBox.value = "Minor";
+    }
+
+
+}
